@@ -11,6 +11,6 @@ resource "aws_s3_bucket" "private_bucket" {
   tags   = var.tags
 
   tags = {
-    Name = "My bucket"
+    Name = local.bucket_name
   }
 }
